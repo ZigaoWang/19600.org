@@ -38,7 +38,9 @@ body {
    ======================================== */
 .site-header {
     background: linear-gradient(to bottom, #62C04D 0%, #52A83D 50%, #42942D 100%);
-    border-bottom: 2px solid #ddd;
+    border-bottom: 3px solid #2D6B1F;
+    border-top: 2px solid #7AD15F;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.3), 0 3px 8px rgba(0,0,0,0.3);
 }
 
 .header-container {
@@ -55,12 +57,15 @@ body {
 }
 
 .logo-wrapper {
-    background-color: var(--white);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #F5F5F5 100%);
     padding: 5px;
-    border: 1px solid #CCCCCC;
+    border: 2px solid #CCCCCC;
+    border-bottom: 3px solid #999999;
+    border-right: 3px solid #999999;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.9), 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .team-logo {
@@ -70,7 +75,7 @@ body {
 
 .team-identity {
     color: var(--white);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0,0,0,0.3);
 }
 
 .team-number {
@@ -91,25 +96,29 @@ body {
 }
 
 .nav-link {
-    padding: 8px 16px;
+    padding: 9px 18px;
     color: #2D5A1F;
-    background: linear-gradient(to bottom, #D4F0C8 0%, #9DD87F 50%, #6FB84A 100%);
+    background: linear-gradient(to bottom, #E5FAD9 0%, #BFED9A 30%, #9DD87F 60%, #7AC15F 100%);
     text-decoration: none;
     font-weight: bold;
     font-size: 11px;
-    border: 1px solid #5A9A3D;
-    border-top: 1px solid #FFFFFF;
-    border-left: 1px solid #FFFFFF;
+    border: 2px solid #5A9A3D;
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
     text-transform: uppercase;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.7), 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
 }
 
 .nav-link:hover,
 .nav-link.active {
-    background: linear-gradient(to bottom, #6FB84A 0%, #5A9A3D 50%, #42942D 100%);
+    background: linear-gradient(to bottom, #7AC15F 0%, #5A9A3D 30%, #4A8A2D 70%, #358020 100%);
     color: #FFFFFF;
-    border: 1px solid #358020;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    border: 2px solid #2D6B1F;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.4);
 }
 
 /* ========================================
@@ -419,6 +428,56 @@ body {
     /* Inherits content-box styles */
 }
 
+/* NEW! Season Box - 2010s Style */
+.new-season-box {
+    border: 3px solid #FF6B00;
+    border-bottom: 4px solid #CC5500;
+    border-right: 4px solid #CC5500;
+    box-shadow: 0 4px 8px rgba(255, 107, 0, 0.3), 0 0 15px rgba(255, 107, 0, 0.2);
+    background: linear-gradient(to bottom, #FFFEF8 0%, #FFF9E6 100%);
+}
+
+.season-header {
+    background: linear-gradient(to bottom, #FFEDCC 0%, #FFDDA1 50%, #FFC870 100%);
+    border-bottom: 3px solid #FF9900;
+    position: relative;
+}
+
+.new-badge {
+    position: relative;
+    background: linear-gradient(to bottom, #FF3333 0%, #FF0000 50%, #CC0000 100%);
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border: 2px solid #990000;
+    border-top: 2px solid #FF6666;
+    border-left: 2px solid #FF6666;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 3px 5px rgba(0,0,0,0.4);
+    transform: rotate(-5deg);
+    margin-right: 10px;
+}
+
+.new-text {
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.2);
+    font-family: Impact, Arial Black, sans-serif;
+}
+
+.new-season-box .box-content {
+    background: linear-gradient(to bottom, #FFFEF8 0%, #FFFFFF 100%);
+}
+
+.new-season-box .box-content p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.new-season-box .box-content p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* ========================================
    FOOTER
    ======================================== */
@@ -426,7 +485,9 @@ body {
     background: linear-gradient(to bottom, #62C04D 0%, #52A83D 50%, #42942D 100%);
     color: var(--white);
     margin-top: 20px;
-    border-top: 2px solid #ddd;
+    border-top: 3px solid #7AD15F;
+    border-bottom: 2px solid #2D6B1F;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 -3px 8px rgba(0,0,0,0.2);
 }
 
 .footer-container {
@@ -439,23 +500,32 @@ body {
 .footer-column h4 {
     font-size: 11px;
     font-weight: bold;
-    color: var(--accent-yellow);
+    color: #FFEE77;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: Verdana, Arial, sans-serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5), 0 -1px 0 rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 5px;
 }
 
 .footer-column a {
     display: block;
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
     font-size: 11px;
     margin-bottom: 6px;
+    padding: 3px 6px;
+    background: rgba(255,255,255,0.05);
+    border-left: 2px solid transparent;
 }
 
 .footer-column a:hover {
-    color: var(--accent-yellow);
+    color: #FFEE77;
+    background: rgba(255,255,255,0.15);
+    border-left: 2px solid #FFEE77;
+    text-shadow: 0 0 5px rgba(255,238,119,0.5);
 }
 
 .footer-logo {
@@ -468,36 +538,47 @@ body {
     margin-bottom: 8px;
     background-color: var(--white);
     padding: 5px;
-    border: 1px solid #CCCCCC;
+    border: 2px solid #CCCCCC;
+    border-bottom: 3px solid #999999;
+    border-right: 3px solid #999999;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 3px 5px rgba(0,0,0,0.3);
 }
 
 .footer-number {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     letter-spacing: 3px;
-    color: var(--accent-yellow);
+    color: #FFEE77;
     font-family: Verdana, Arial, sans-serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6), 0 -1px 0 rgba(255,255,255,0.2);
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0,0,0,0.1);
     padding: 12px;
     text-align: center;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .footer-bottom p {
     font-size: 10px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
     margin: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 }
 
 .footer-bottom a {
-    color: var(--accent-yellow);
+    color: #FFEE77;
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .footer-bottom a:hover {
     text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0 0 8px rgba(255,238,119,0.8);
 }
 
 /* ========================================
