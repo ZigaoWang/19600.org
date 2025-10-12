@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #003A70;
+    --light-blue: #0056A3;
+    --accent-green: #52A83D;
+    --accent-yellow: #F0A500;
+    --white: #FFFFFF;
+    --off-white: #F5F5F5;
+    --light-gray: #E8E8E8;
+    --medium-gray: #999999;
+    --dark-gray: #333333;
+    --border-color: #CCCCCC;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: #D4E8CF;
+}
+
+/* Main container wrapper for entire site */
+.site-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+.site-header {
+    background: linear-gradient(to bottom, #62C04D 0%, #52A83D 50%, #42942D 100%);
+    border-bottom: 2px solid #ddd;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-wrapper {
+    background-color: var(--white);
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-logo {
+    height: 45px;
+    width: auto;
+}
+
+.team-identity {
+    color: var(--white);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.team-number {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.team-name-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: flex;
+    gap: 3px;
+}
+
+.nav-link {
+    padding: 8px 16px;
+    color: #2D5A1F;
+    background: linear-gradient(to bottom, #D4F0C8 0%, #9DD87F 50%, #6FB84A 100%);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+    border: 1px solid #5A9A3D;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    text-transform: uppercase;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: linear-gradient(to bottom, #6FB84A 0%, #5A9A3D 50%, #42942D 100%);
+    color: #FFFFFF;
+    border: 1px solid #358020;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero-section {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    max-height: 300px;
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.hero-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(82, 168, 61, 0.7), transparent);
+    padding: 25px;
+}
+
+.hero-overlay h1 {
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.9);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ========================================
+   CONTENT WRAPPER
+   ======================================== */
+.content-wrapper {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ========================================
+   CONTENT BOXES
+   ======================================== */
+.content-box {
+    background-color: var(--white);
+    border: 1px solid #B8B8B8;
+    border-bottom: 2px solid #888888;
+    border-right: 2px solid #888888;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* About Box */
+.about-box {
+    padding: 30px 25px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f0f4f7 100%);
+    border: 1px solid #9AC658;
+    border-bottom: 3px solid #6B9430;
+    border-right: 3px solid #6B9430;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.intro-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.intro-logo {
+    height: 60px;
+    width: auto;
+    background: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+    border-bottom: 2px solid #999999;
+    border-right: 2px solid #999999;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 2px 3px rgba(0,0,0,0.15);
+}
+
+.intro-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent-green);
+    margin-bottom: 0;
+    letter-spacing: -0.5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--dark-gray);
+}
+
+.about-box p {
+    font-size: 16px!important;
+    line-height: 1.7;
+    color: var(--dark-gray);
+}
+
+/* Robot Showcase */
+.robot-showcase {
+    padding: 15px;
+}
+
+.robot-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.robot-item {
+    background-color: var(--off-white);
+    padding: 5px;
+    border: 2px solid var(--border-color);
+    border-top: 2px solid #E8E8E8;
+    border-left: 2px solid #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.robot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Two Column Section */
+.two-column-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Box Header Styles */
+.box-header {
+    background-color: #E8E8E8;
+    border-bottom: 2px solid var(--border-color);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.box-header-solid {
+    background-image: url('../images/hongwen2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    border: 2px solid #1A202C;
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-header-solid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.box-header-solid h2,
+.box-header-solid .learn-more-btn {
+    position: relative;
+    z-index: 2;
+}
+
+.box-header-solid h2 {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-transform: uppercase;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    background: linear-gradient(to bottom, #FFDE7A 0%, #FFB84D 30%, #F0A500 60%, #E09400 100%);
+    color: #663300;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #D08800;
+    border-top: 1px solid #FFEE99;
+    border-left: 1px solid #FFEE99;
+    text-transform: uppercase;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 2px 4px rgba(0,0,0,0.25);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.learn-more-btn:hover {
+    background: linear-gradient(to bottom, #FFB84D 0%, #F0A500 50%, #D08800 100%);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.inline-logo {
+    height: 50px;
+    width: auto;
+}
+
+.inline-logo-large {
+    height: 60px;
+    width: auto;
+}
+
+.inline-logo-right {
+    height: 80px;
+    width: auto;
+}
+
+.season-logos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.box-header-text {
+    flex: 1;
+}
+
+.box-header-text h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--dark-gray);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.visit-link {
+    display: inline-block;
+    padding: 6px 14px;
+    background: linear-gradient(to bottom, #D4F0C8 0%, #9DD87F 50%, #6FB84A 100%);
+    color: #2D5A1F;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid #5A9A3D;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    text-transform: uppercase;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.2);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+}
+
+.visit-link:hover {
+    background: linear-gradient(to bottom, #6FB84A 0%, #5A9A3D 50%, #42942D 100%);
+    color: #FFFFFF;
+    border: 1px solid #358020;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+}
+
+.box-content {
+    padding: 15px;
+}
+
+.box-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+/* School Box */
+.school-box {
+    min-height: 200px;
+}
+
+/* Programs Box */
+.programs-box {
+    overflow: hidden;
+}
+
+.programs-box .box-header-solid {
+    border: none;
+}
+
+/* FIRST Box */
+.first-box {
+    /* Inherits content-box styles */
+}
+
+/* Event Box */
+.event-box {
+    /* Inherits content-box styles */
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.site-footer {
+    background: linear-gradient(to bottom, #62C04D 0%, #52A83D 50%, #42942D 100%);
+    color: var(--white);
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.footer-container {
+    padding: 20px 15px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 20px;
+}
+
+.footer-column h4 {
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--accent-yellow);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.footer-column a {
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.footer-column a:hover {
+    color: var(--accent-yellow);
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: auto;
+    margin-bottom: 8px;
+    background-color: var(--white);
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+.footer-number {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--accent-yellow);
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: var(--accent-yellow);
+    text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+    text-decoration: none;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 1024px) {
+    .robot-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .two-column-section {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-logo {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .nav-link {
+        flex: 1;
+        text-align: center;
+        min-width: 80px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 24px;
+    }
+
+    .robot-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inline-logo,
+    .inline-logo-large {
+        height: 60px;
+    }
+
+    .box-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inline-logo-right {
+        margin-left: 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.text-center {
+    text-align: center;
+}
+
+strong {
+    font-weight: bold;
+    color: var(--accent-green);
+}
+
+em {
+    font-style: italic;
+    color: var(--medium-gray);
+}
+
+/* ========================================
+   TEAM MEMBERS SECTION
+   ======================================== */
+.team-members-box {
+    background-color: var(--white);
+    border: 2px solid var(--border-color);
+    border-top: 2px solid #E8E8E8;
+    border-left: 2px solid #E8E8E8;
+}
+
+.team-members-header {
+    background-color: #E8E8E8;
+    border-bottom: 2px solid var(--border-color);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-members-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-members-content {
+    padding: 20px;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.member-card {
+    background-color: #F8F8F8;
+    border: 2px solid var(--border-color);
+    border-top: 2px solid #E8E8E8;
+    border-left: 2px solid #E8E8E8;
+    padding: 10px;
+    text-align: center;
+}
+
+.member-name {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--accent-green);
+    margin-bottom: 5px;
+}
+
+.member-role {
+    font-size: 11px;
+    color: var(--dark-gray);
+    line-height: 1.4;
+}
+
+.member-icon {
+    font-size: 10px;
+    color: var(--medium-gray);
+    font-style: italic;
+}
+
+.view-all-link {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(to bottom, #D4F0C8 0%, #9DD87F 50%, #6FB84A 100%);
+    color: #2D5A1F;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid #5A9A3D;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    text-transform: uppercase;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+}
+
+.view-all-link:hover {
+    background: linear-gradient(to bottom, #6FB84A 0%, #5A9A3D 50%, #42942D 100%);
+    color: #FFFFFF;
+    border: 1px solid #358020;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 3px 6px rgba(0,0,0,0.25);
+}
