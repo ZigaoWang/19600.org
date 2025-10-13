@@ -47,39 +47,42 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px;
+    padding: 15px 20px;
 }
 
 .logo-section {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .logo-wrapper {
-    background: linear-gradient(to bottom, #FFFFFF 0%, #F5F5F5 100%);
-    padding: 5px;
-    border: 2px solid #CCCCCC;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #F8F8F8 50%, #E8E8E8 100%);
+    padding: 6px;
+    border: 3px solid #CCCCCC;
+    border-top: 3px solid #FFFFFF;
+    border-left: 3px solid #FFFFFF;
     border-bottom: 3px solid #999999;
     border-right: 3px solid #999999;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.9), 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: inset 0 2px 3px rgba(255,255,255,0.9), inset 0 -1px 2px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.3);
 }
 
 .team-logo {
     height: 45px;
     width: auto;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
 }
 
 .team-identity {
     color: var(--white);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.4), 2px 2px 4px rgba(0,0,0,0.6), 0 0 15px rgba(0,0,0,0.3);
 }
 
 .team-number {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     letter-spacing: 2px;
     line-height: 1;
@@ -92,33 +95,36 @@ body {
 
 .main-nav {
     display: flex;
-    gap: 3px;
+    gap: 4px;
 }
 
 .nav-link {
-    padding: 9px 18px;
-    color: #2D5A1F;
-    background: linear-gradient(to bottom, #E5FAD9 0%, #BFED9A 30%, #9DD87F 60%, #7AC15F 100%);
+    padding: 10px 20px;
+    color: #1A4010;
+    background: linear-gradient(to bottom, #F0FFE8 0%, #D4F0C8 20%, #BFED9A 40%, #9DD87F 60%, #7AC15F 100%);
     text-decoration: none;
     font-weight: bold;
     font-size: 11px;
     border: 2px solid #5A9A3D;
-    border-top: 2px solid #FFFFFF;
-    border-left: 2px solid #FFFFFF;
+    border-top: 3px solid #FFFFFF;
+    border-left: 3px solid #FFFFFF;
+    border-bottom: 3px solid #3D7020;
+    border-right: 3px solid #3D7020;
     text-transform: uppercase;
-    box-shadow: inset 0 2px 0 rgba(255,255,255,0.7), 0 2px 4px rgba(0,0,0,0.3);
-    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+    box-shadow: inset 0 3px 5px rgba(255,255,255,0.8), inset 0 -1px 3px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
 }
 
 .nav-link:hover,
 .nav-link.active {
-    background: linear-gradient(to bottom, #7AC15F 0%, #5A9A3D 30%, #4A8A2D 70%, #358020 100%);
+    background: linear-gradient(to bottom, #8AE070 0%, #7AC15F 20%, #5A9A3D 40%, #4A8A2D 70%, #358020 100%);
     color: #FFFFFF;
-    border: 2px solid #2D6B1F;
-    border-bottom: 2px solid #000000;
-    border-right: 2px solid #000000;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
-    box-shadow: inset 0 -1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.4);
+    border-top: 2px solid #4A8A2D;
+    border-left: 2px solid #4A8A2D;
+    border-bottom: 3px solid #1A3010;
+    border-right: 3px solid #1A3010;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.6), 0 1px 0 rgba(255,255,255,0.1);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3), inset 0 -1px 0 rgba(255,255,255,0.1), 0 2px 4px rgba(0,0,0,0.4);
 }
 
 /* ========================================
