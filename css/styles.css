@@ -761,3 +761,31 @@ em {
     text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 3px 6px rgba(0,0,0,0.25);
 }
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.sponsor-card {
+    text-align: center;
+    padding: 15px;
+}
+
+.sponsor-card img {
+    max-width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.sponsor-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent-green);
+    margin-top: 10px;
+}
