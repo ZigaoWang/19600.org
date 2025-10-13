@@ -4,45 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team - Treeman 19600</title>
-    <meta name="description" content="Meet the talented members of Treeman 19600 FTC team">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <img src="images/TreemanLogo.png" alt="Treeman Logo" class="logo" height="40">
-                <span class="brand-text">Treeman 19600</span>
+    <div class="site-container">
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-wrapper">
+                    <img src="images/logo.ico" alt="Treeman Logo" class="team-logo">
+                </div>
+                <div class="team-identity">
+                    <div class="team-number">19600</div>
+                    <div class="team-name-text">Treeman</div>
+                </div>
             </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="team.html" class="nav-link active">Team</a></li>
-                <li><a href="achievements.html" class="nav-link">Achievements</a></li>
-                <li><a href="competition.html" class="nav-link">Competition</a></li>
-            </ul>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link active">Team</a>
+                <a href="achievements.html" class="nav-link">Achievements</a>
+                <a href="competition.html" class="nav-link">FTC</a>
+                <a href="media.html" class="nav-link">Media</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
+    <section class="hero-section">
+        <img src="images/team-hero.jpg" alt="Treeman 19600 Team" class="hero-image">
+        <div class="hero-overlay">
             <h1>Our Team</h1>
-            <p>Meet the talented individuals behind Treeman 19600</p>
         </div>
     </section>
 
-    <!-- Team Members Section -->
-    <section class="team-members">
-        <div class="container">
-            <!-- Role Legend -->
-            <div class="role-legend">
-                <h3>Team Roles</h3>
+    <div class="content-wrapper">
+        <section class="content-box">
+            <div class="box-content">
+                <h2>Meet the talented individuals behind Treeman 19600</h2>
+                <p>Our team consists of dedicated students from YK Pao School who are passionate about robotics, engineering, and STEM education.</p>
+            </div>
+        </section>
+
+        <section class="content-box">
+            <div class="box-header-solid">
+                <h2>TEAM ROLES</h2>
+            </div>
+            <div class="box-content">
                 <div class="legend-items">
                     <div class="legend-item">
                         <span class="role-icon pm">📱</span>
@@ -62,262 +74,211 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Team Grid -->
-            <div class="team-grid">
-                <!-- Dylan Xu -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/dylan-placeholder.jpg" alt="Dylan Xu">
+        <section class="team-members-box">
+            <div class="team-members-header">
+                <h2>Team Members</h2>
+            </div>
+            <div class="team-members-content">
+                <div class="members-grid">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                            <span class="role-icon programming" title="Programming">💻</span>
+                            <span class="role-icon driver" title="Driver">🎮</span>
+                        </div>
+                        <div class="member-name">Dylan Xu</div>
+                        <div class="member-role">熟练掌握机器人的三维设计和搭建，为队伍贡献好的操作以及养好的操作手</div>
+                        <div class="member-role-en">Master 3D design and robot construction for the team, contribute excellent operations and train skilled drivers</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                        <span class="role-icon programming" title="Programming">💻</span>
-                        <span class="role-icon driver" title="Driver">🎮</span>
-                    </div>
-                    <h3>Dylan Xu</h3>
-                    <p class="member-goal">熟练掌握机器人的三维设计和搭建，为队伍贡献好的操作以及养好的操作手</p>
-                    <p class="member-goal-en">Master 3D design and robot construction for the team, contribute excellent operations and train skilled drivers</p>
-                </div>
 
-                <!-- Sky Liu -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/sky-placeholder.jpg" alt="Sky Liu">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon programming" title="Programming">💻</span>
+                        </div>
+                        <div class="member-name">Sky Liu</div>
+                        <div class="member-role">熟练运用编程能力在赛场上帮助队伍取得好名次，赛场外帮助赛营试验创造在限制条件内的希望</div>
+                        <div class="member-role-en">Apply programming skills to help the team achieve good results on the field, and assist in creating innovative solutions within constraints</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon programming" title="Programming">💻</span>
-                    </div>
-                    <h3>Sky Liu</h3>
-                    <p class="member-goal">熟练运用编程能力在赛场上帮助队伍取得好名次，赛场外帮助赛营试验创造在限制条件内的希望</p>
-                    <p class="member-goal-en">Apply programming skills to help the team achieve good results on the field, and assist in creating innovative solutions within constraints</p>
-                </div>
 
-                <!-- Zigao Wang -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/zigao-placeholder.jpg" alt="Zigao Wang">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon pm" title="PM & Outreach">📱</span>
+                            <span class="role-icon programming" title="Programming">💻</span>
+                        </div>
+                        <div class="member-name">Zigao Wang</div>
+                        <div class="member-role">通过外联联络更多 FIRST 队伍和伙伴，共同践行 GP 精神并开拓爱好 STEM</div>
+                        <div class="member-role-en">Connect with more FIRST teams and partners through outreach, practice GP spirit together, and promote STEM passion</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon pm" title="PM & Outreach">📱</span>
-                        <span class="role-icon programming" title="Programming">💻</span>
-                    </div>
-                    <h3>Zigao Wang</h3>
-                    <p class="member-goal">通过外联联络更多 FIRST 队伍和伙伴，共同践行 GP 精神并开拓爱好 STEM</p>
-                    <p class="member-goal-en">Connect with more FIRST teams and partners through outreach, practice GP spirit together, and promote STEM passion</p>
-                </div>
 
-                <!-- Ricky Lu -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/ricky-placeholder.jpg" alt="Ricky Lu">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon pm" title="PM & Outreach">📱</span>
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                        </div>
+                        <div class="member-name">Ricky Lu</div>
+                        <div class="member-role">熟练掌握机器人的搭建和维修，为队伍供更多保障。希望可以同时提升我的领导能力</div>
+                        <div class="member-role-en">Master robot assembly and maintenance to provide better support for the team, while improving leadership abilities</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon pm" title="PM & Outreach">📱</span>
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                    </div>
-                    <h3>Ricky Lu</h3>
-                    <p class="member-goal">熟练掌握机器人的搭建和维修，为队伍供更多保障。希望可以同时提升我的领导能力</p>
-                    <p class="member-goal-en">Master robot assembly and maintenance to provide better support for the team, while improving leadership abilities</p>
-                </div>
 
-                <!-- Wilson Shu -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/wilson-placeholder.jpg" alt="Wilson Shu">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon pm" title="PM & Outreach">📱</span>
+                            <span class="role-icon programming" title="Programming">💻</span>
+                        </div>
+                        <div class="member-name">Wilson Shu</div>
+                        <div class="member-role">努力提升自己的 OOP 编程能力，提升领导力和组织能力，在学习和传授 STEM 上有所长进</div>
+                        <div class="member-role-en">Improve OOP programming skills, enhance leadership and organizational abilities, and advance in learning and teaching STEM</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon pm" title="PM & Outreach">📱</span>
-                        <span class="role-icon programming" title="Programming">💻</span>
-                    </div>
-                    <h3>Wilson Shu</h3>
-                    <p class="member-goal">努力提升自己的 OOP 编程能力，提升领导力和组织能力，在学习和传授 STEM 上有所长进</p>
-                    <p class="member-goal-en">Improve OOP programming skills, enhance leadership and organizational abilities, and advance in learning and teaching STEM</p>
-                </div>
 
-                <!-- Carmen Gu -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/carmen-placeholder.jpg" alt="Carmen Gu">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon pm" title="PM & Outreach">📱</span>
+                            <span class="role-icon programming" title="Programming">💻</span>
+                        </div>
+                        <div class="member-name">Carmen Gu</div>
+                        <div class="member-role">熟练机器人搭建和编程，希望这次能够帮助提升操作实力，与大家共同努力</div>
+                        <div class="member-role-en">Master robot construction and programming, hoping to help improve operational capabilities and work together with everyone</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon pm" title="PM & Outreach">📱</span>
-                        <span class="role-icon programming" title="Programming">💻</span>
-                    </div>
-                    <h3>Carmen Gu</h3>
-                    <p class="member-goal">熟练机器人搭建和编程，希望这次能够帮助提升操作实力，与大家共同努力</p>
-                    <p class="member-goal-en">Master robot construction and programming, hoping to help improve operational capabilities and work together with everyone</p>
-                </div>
 
-                <!-- Ariana Cao -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/ariana-placeholder.jpg" alt="Ariana Cao">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                        </div>
+                        <div class="member-name">Ariana Cao</div>
+                        <div class="member-role">努力为队伍贡献独特的设计思路及图纸，希望与大家一起完成又一个精彩的赛季</div>
+                        <div class="member-role-en">Contribute unique design ideas and blueprints to the team, hoping to complete another exciting season together</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                    </div>
-                    <h3>Ariana Cao</h3>
-                    <p class="member-goal">努力为队伍贡献独特的设计思路及图纸，希望与大家一起完成又一个精彩的赛季</p>
-                    <p class="member-goal-en">Contribute unique design ideas and blueprints to the team, hoping to complete another exciting season together</p>
-                </div>
 
-                <!-- Kevin Wang -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/kevin-placeholder.jpg" alt="Kevin Wang">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                            <span class="role-icon programming" title="Programming">💻</span>
+                        </div>
+                        <div class="member-name">Kevin Wang</div>
+                        <div class="member-role">熟练操作机器人，熟悉机器人的各个部分以及其工作原理，能够维修并改进机器人的运作</div>
+                        <div class="member-role-en">Proficient in operating robots, familiar with all parts and their working principles, able to maintain and improve robot operations</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                        <span class="role-icon programming" title="Programming">💻</span>
-                    </div>
-                    <h3>Kevin Wang</h3>
-                    <p class="member-goal">熟练操作机器人，熟悉机器人的各个部分以及其工作原理，能够维修并改进机器人的运作</p>
-                    <p class="member-goal-en">Proficient in operating robots, familiar with all parts and their working principles, able to maintain and improve robot operations</p>
-                </div>
 
-                <!-- Amy Ai -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/amy-placeholder.jpg" alt="Amy Ai">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon programming" title="Programming">💻</span>
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                            <span class="role-icon driver" title="Driver">🎮</span>
+                        </div>
+                        <div class="member-name">Amy Ai</div>
+                        <div class="member-role">帮助队伍扩大影响力，提高自身领导能力。同时熟练掌握机器人的路线搭建与安装</div>
+                        <div class="member-role-en">Help expand the team's influence, improve personal leadership. Master robot path planning and assembly</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon programming" title="Programming">💻</span>
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                        <span class="role-icon driver" title="Driver">🎮</span>
-                    </div>
-                    <h3>Amy Ai</h3>
-                    <p class="member-goal">帮助队伍扩大影响力，提高自身领导能力。同时熟练掌握机器人的路线搭建与安装</p>
-                    <p class="member-goal-en">Help expand the team's influence, improve personal leadership. Master robot path planning and assembly</p>
-                </div>
 
-                <!-- Claire Xin -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/claire-placeholder.jpg" alt="Claire Xin">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon programming" title="Programming">💻</span>
+                        </div>
+                        <div class="member-name">Claire Xin</div>
+                        <div class="member-role">熟练机器人搭建和编程，希望这次能够帮助提升操作实力，与大家共同努力</div>
+                        <div class="member-role-en">Master robot construction and programming, hoping to help improve operational capabilities and work together with everyone</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon programming" title="Programming">💻</span>
-                    </div>
-                    <h3>Claire Xin</h3>
-                    <p class="member-goal">熟练机器人搭建和编程，希望这次能够帮助提升操作实力，与大家共同努力</p>
-                    <p class="member-goal-en">Master robot construction and programming, hoping to help improve operational capabilities and work together with everyone</p>
-                </div>
 
-                <!-- Raphael AY -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/raphael-placeholder.jpg" alt="Raphael AY">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                        </div>
+                        <div class="member-name">Raphael AY</div>
+                        <div class="member-role">熟练机器人上的所有不同的部件，同时也可以设计出可以让机器人跑得会更有效的设计</div>
+                        <div class="member-role-en">Master all different robot components, and design solutions that make the robot run more effectively</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                    </div>
-                    <h3>Raphael AY</h3>
-                    <p class="member-goal">熟练机器人上的所有不同的部件，同时也可以设计出可以让机器人跑得会更有效的设计</p>
-                    <p class="member-goal-en">Master all different robot components, and design solutions that make the robot run more effectively</p>
-                </div>
 
-                <!-- Nemo Cai -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/nemo-placeholder.jpg" alt="Nemo Cai">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon programming" title="Programming">💻</span>
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                        </div>
+                        <div class="member-name">Nemo Cai</div>
+                        <div class="member-role">通过比赛精进我的编程能力，尝试在有限的资源下实现复杂的功能，尤其是 CV 相关的</div>
+                        <div class="member-role-en">Improve programming skills through competition, try to implement complex functions with limited resources, especially CV-related</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon programming" title="Programming">💻</span>
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                    </div>
-                    <h3>Nemo Cai</h3>
-                    <p class="member-goal">通过比赛精进我的编程能力，尝试在有限的资源下实现复杂的功能，尤其是 CV 相关的</p>
-                    <p class="member-goal-en">Improve programming skills through competition, try to implement complex functions with limited resources, especially CV-related</p>
-                </div>
 
-                <!-- Roger Chu -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/roger-placeholder.jpg" alt="Roger Chu">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                        </div>
+                        <div class="member-name">Roger Chu</div>
+                        <div class="member-role">今年我想主要发展工程类技术，尤其是电气工程这一块，我也想练习人际技能</div>
+                        <div class="member-role-en">This year I want to mainly develop engineering skills, especially in electrical engineering, and also practice interpersonal skills</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                    </div>
-                    <h3>Roger Chu</h3>
-                    <p class="member-goal">今年我想主要发展工程类技术，尤其是电气工程这一块，我也想练习人际技能</p>
-                    <p class="member-goal-en">This year I want to mainly develop engineering skills, especially in electrical engineering, and also practice interpersonal skills</p>
-                </div>
 
-                <!-- Tony Huang -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/tony-placeholder.jpg" alt="Tony Huang">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                        </div>
+                        <div class="member-name">Tony Huang</div>
+                        <div class="member-role">努力提升自己的工程与设计能力，深入理解机器人结构与原理，希望在实践中积累经验</div>
+                        <div class="member-role-en">Strive to improve engineering and design capabilities, deeply understand robot structure and principles, and gain experience in practice</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                    </div>
-                    <h3>Tony Huang</h3>
-                    <p class="member-goal">努力提升自己的工程与设计能力，深入理解机器人结构与原理，希望在实践中积累经验</p>
-                    <p class="member-goal-en">Strive to improve engineering and design capabilities, deeply understand robot structure and principles, and gain experience in practice</p>
-                </div>
 
-                <!-- Thomas W -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/thomas-placeholder.jpg" alt="Thomas W">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon programming" title="Programming">💻</span>
+                            <span class="role-icon engineering" title="Engineering">🔧</span>
+                            <span class="role-icon driver" title="Driver">🎮</span>
+                        </div>
+                        <div class="member-name">Thomas W</div>
+                        <div class="member-role">了解机器人的结构设计，熟练搭建和维修机器人，希望可以提升操作实力与赛场应变能力</div>
+                        <div class="member-role-en">Understand robot structural design, proficient in building and maintaining robots, hoping to improve operational capabilities and on-field adaptability</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon programming" title="Programming">💻</span>
-                        <span class="role-icon engineering" title="Engineering">🔧</span>
-                        <span class="role-icon driver" title="Driver">🎮</span>
-                    </div>
-                    <h3>Thomas W</h3>
-                    <p class="member-goal">了解机器人的结构设计，熟练搭建和维修机器人，希望可以提升操作实力与赛场应变能力</p>
-                    <p class="member-goal-en">Understand robot structural design, proficient in building and maintaining robots, hoping to improve operational capabilities and on-field adaptability</p>
-                </div>
 
-                <!-- Gloria Guo -->
-                <div class="member-card">
-                    <div class="member-image">
-                        <img src="images/gloria-placeholder.jpg" alt="Gloria Guo">
+                    <div class="member-card">
+                        <div class="member-roles">
+                            <span class="role-icon pm" title="PM & Outreach">📱</span>
+                            <span class="role-icon programming" title="Programming">💻</span>
+                        </div>
+                        <div class="member-name">Gloria Guo</div>
+                        <div class="member-role">存活申请季的同时好好队伍外联，争取让团队在新赛季发扬光大，做好队伍转让工作</div>
+                        <div class="member-role-en">Survive application season while doing good outreach for the team, strive to make the team flourish in the new season, and ensure smooth team transition</div>
                     </div>
-                    <div class="member-roles">
-                        <span class="role-icon pm" title="PM & Outreach">📱</span>
-                        <span class="role-icon programming" title="Programming">💻</span>
-                    </div>
-                    <h3>Gloria Guo</h3>
-                    <p class="member-goal">存活申请季的同时好好队伍外联，争取让团队在新赛季发扬光大，做好队伍转让工作</p>
-                    <p class="member-goal-en">Survive application season while doing good outreach for the team, strive to make the team flourish in the new season, and ensure smooth team transition</p>
                 </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Team 19600</h4>
+                <a href="#">FIRST Robotics</a>
+                <a href="#">Our Team</a>
+                <a href="#">Achievements</a>
+            </div>
+            <div class="footer-column">
+                <h4>About</h4>
+                <a href="#">The Team</a>
+                <a href="#">Competition</a>
+                <a href="#">Outreach</a>
+            </div>
+            <div class="footer-column">
+                <h4>Media</h4>
+                <a href="#">Photos</a>
+                <a href="#">Videos</a>
+                <a href="#">Press Kit</a>
+            </div>
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">Sponsors</a>
+            </div>
+            <div class="footer-logo">
+                <img src="images/logo.ico" alt="Treeman Logo">
+                <div class="footer-number">19600</div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/TreemanLogo.png" alt="Treeman Logo" height="60">
-                    <p>Treeman 19600</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="achievements.html">Achievements</a></li>
-                        <li><a href="competition.html">Competition</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Connect</h4>
-                    <a href="https://youtu.be/zdzo_euz--s?si=G-Let6dZY_4gcpvt" target="_blank" rel="noopener">Team Introduction</a>
-                    <a href="https://youtu.be/-exSmCcoY1E?si=EEnc6jbMRxUayWcB" target="_blank" rel="noopener">About FTC</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Treeman 19600. Website designed and developed by <a href="https://zigao.wang" target="_blank" rel="noopener">Zigao Wang</a></p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Treeman 19600. Website designed and developed by <a href="https://zigao.wang">Zigao Wang</a></p>
         </div>
     </footer>
 
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
