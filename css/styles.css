@@ -789,3 +789,63 @@ em {
     color: var(--accent-green);
     margin-top: 10px;
 }
+
+.design-banner {
+    background: #FFFFCC;
+    border: 3px solid #FF9900;
+    border-top: 3px solid #FFCC66;
+    border-left: 3px solid #FFCC66;
+    border-bottom: 3px solid #CC6600;
+    border-right: 3px solid #CC6600;
+    padding: 15px;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.design-banner h3 {
+    color: #CC0000;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.design-banner p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.design-banner a {
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+.design-banner a:visited {
+    color: #800080;
+}
+
+.design-banner-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #CCCCCC;
+    border: 2px solid #000000;
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    border-bottom: 2px solid #666666;
+    border-right: 2px solid #666666;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1;
+    color: #000000;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.design-banner-close:hover {
+    background: #AAAAAA;
+}
