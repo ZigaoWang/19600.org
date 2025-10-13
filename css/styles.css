@@ -818,12 +818,18 @@ em {
 }
 
 .design-banner a {
-    color: #0000FF;
+    color: #0066CC;
     text-decoration: underline;
+    font-weight: 600;
+}
+
+.design-banner a:hover {
+    color: #003399;
+    background-color: #FFFF99;
 }
 
 .design-banner a:visited {
-    color: #800080;
+    color: #660099;
 }
 
 .design-banner-close {
